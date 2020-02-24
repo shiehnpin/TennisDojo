@@ -29,6 +29,7 @@
 + 檔案內搜尋 Command+F
 + 重新命名 shift+F6
 + 執行測試 Control+R
++ Git上Commit Command+K
 
 
 ## tennis game 遊戲需求
