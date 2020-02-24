@@ -2,11 +2,15 @@ class TennisGame(val playerAName: String, val playerBName: String) {
     fun getResult(playerAScore: Int, playerBScore: Int): String {
         if (playerAScore == playerBScore) {
             return when (playerAScore) {
-                4 -> "Deuce"
+                3 -> "Deuce"
                 else -> "${scoreMap[playerAScore]} all"
             }
+        } else if (playerAScore + playerBScore == 7) {
+            return "RRRRRRRRRR"
         } else if (playerAScore == 4) {
             return "$playerAName win"
+        } else if (playerBScore == 4) {
+            return "$playerBName win"
         } else {
             return "${scoreMap[playerAScore]}/${scoreMap[playerBScore]}"
         }
