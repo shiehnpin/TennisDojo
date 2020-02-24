@@ -5,7 +5,6 @@
 + 已 pair programming 形式進行，一組 10 分鐘
   + 一位 driver (輸入程式碼的人)，一位 navigator (審查程式碼的人)
   + 下一輪時 navigator 變成 driver 跟下一個 navigator 再變成一組
-+ 採自願排隊上台輪流 pair
 + 本次 coding dojo 採用的題目是 [tennis game](https://en.wikipedia.org/wiki/Tennis#Scoring) 
 + 本專案改自[https://github.com/bng86/tennis_coding_dojo_20190327](https://github.com/bng86/tennis_coding_dojo_20190327)
 
@@ -19,12 +18,22 @@
 + 要寫測試
 + 有紅燈時要先修測試
 + 有紅燈時不能重構
-+ 要寫 production code 要有測試
++ 要寫功能要有測試
 + 每一輪時間到的時候至少要可以編譯
+
+## 實用快速鍵
+
++ 上個游標處 Command+[
++ 下個游標處 Command+]
++ 找檔案 shift+shift
++ 檔案內搜尋 Command+F
++ 重新命名 shift+F6
++ 
+
 
 ## tennis game 遊戲需求
 
-這個Kata是要實作一個簡單的網球計分系統。
+這個Dojo是要實作一個簡單的網球計分系統。
 
 規則如下：
 
