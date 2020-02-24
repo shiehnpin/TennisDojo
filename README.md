@@ -56,6 +56,7 @@
  player2 = Bar
  
  + score = 0:0 output = 'Love all'
+ + score = 1:1 output = 'Fifteen all'
  + score = 1:0 output = 'Fifteen/Love'
  + score = 0:1 output = 'Love/Fifteen'
  + score = 2:0 output = 'Thirty/Love'
@@ -65,8 +66,8 @@
  + score = 4:0 output = 'Foo win'
  + score = 2:4 output = 'Bar win'
  + score = 3:3 output = 'Deuce'
- + score = 4:5 output = 'Advantage, Bar'
- + score = 5:4 output = 'Advantage, Foo'
- + score = 6:4 output = 'Foo win'
- + score = 4:6 output = 'Bar win' 
+ + score = 3:4 output = 'Advantage, Bar'
+ + score = 4:3 output = 'Advantage, Foo'
+ + score = 5:3 output = 'Foo win'
+ + score = 3:5 output = 'Bar win' 
  ... 
