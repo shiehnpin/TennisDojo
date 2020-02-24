@@ -1,28 +1,30 @@
 class TennisGame(val playerAName: String, val playerBName: String) {
-    fun getResult(playerAScore: Score, playerBScore: Score): String {
+    fun getResult(playerAScore: Int, playerBScore: Int): String {
         if (playerAScore == playerBScore) {
             return when (playerAScore) {
-                Score.LOVE -> "Love all"
-                Score.FIFTEEN -> "Fifteen all"
-                Score.THIRTY -> "Thirty all"
-                Score.FORTY -> "Deuce"
-                else -> ""
+                4 -> "Deuce"
+                else -> "${scoreMap[playerAScore]} all"
             }
-        } else if (playerAScore == Score.WIN) {
+        } else if (playerAScore == 4) {
             return "$playerAName win"
         } else {
-            return "${playerAScore.msg}/${playerBScore.msg}"
+            return "${scoreMap[playerAScore]}/${scoreMap[playerBScore]}"
         }
     }
 
 }
 
-enum class Score(val score: Int, val msg: String) {
-    LOVE(0, "Love"),
-    FIFTEEN(1, "Fifteen"),
-    THIRTY(2, "Thirty"),
-    FORTY(3, "Forty"),
+val scoreMap = hashMapOf(
+    Pair(0, "Love"),
+    Pair(1, "Fifteen"),
+    Pair(2, "Thirty"),
+    Pair(3, "Forty")
+)
 
-    WIN(4, "???")
+enum class Score(val score: Int) {
+    Love(0),
+    Fifteen(1),
+    Thirty(2),
+    Forty(3),
 }
 
